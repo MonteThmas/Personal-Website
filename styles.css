@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+
+
+}
+/* navbar stylingg */
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 15px 0;
+	background: black;
+	font-family: 'Ubuntu' , sans-serif;
+}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .menu li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 25x;
+}
+.navbar .menu li a:hover{
+	color: darkgrey;
+}
+
+/* home styling */
+.home{
+	display: flex;
+	background-size: cover;
+	background-attachment: fixed;
+	background: url("images/stack.jpeg") no-repeat center;
+	height: 100vh;
+	color: #fff;
+	background-color: #000;
+	min-height: 500px;
+	font-family: 'Ubuntu' , sans-serif;
+
+}
+
+.home .max-width {
+	margin: auto 0 auto 40px;
+
+
+}
+
+.home .home-content .text-1{
+	font-size: 27px;
+
+
+}
+.home .home-content .text-2{
+	font-size: 75px;
+	font-weight: 600;
+	margin-left: -3px;
+
+
+
+}
+.home .home-content .text-3{
+	font-size: 40px;
+	margin:  5px 0;
+
+}
+
+.home .home-content .text-3 span{
+	color: lightgrey;
+	font-weight: 500;
+}
+.home p{
+	color: white;
+	font-size: 20px;
+}
+
+/*education section styling */
+section{
+	padding: 100px 0;
+}
+.education{
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+}
+.education .title{
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 90px;
+	margin-top: -90px;
+	
+}
+.education .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left:  50%;
+	width: 260px;
+	height: 3px;
+	background: white;
+	transform: translateX(-50%);
+
+}
+.education .title::after{
+	content: "-school-";
+	position: absolute;
+	bottom: -30px;
+	left:  50%;
+	padding: 5px;
+	background: black;
+	transform: translateX(-50%);
+	font-size: 15px;
+	color: white;
+
+
+}
+.education .education-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.education .education-content .left{
+	width: 45%;
+}
+.education .education-content .left img{
+	height: 300px;
+	width: 400px;
+	object-fit: cover;
+	margin-left: -80px;
+}
+.education .education-content .right img{
+	height: 300px;
+	width: 400px;
+	object-fit: cover;
+	margin-left: -80px;
+}
+
+.education .education-content .right{
+	width: 55%;
+}
+.education .education-content .text{
+	font-size: 15px;
+	font-weight: 300px;
+	margin-bottom: -50px;
+	margin-top: 60px;
+	color: white;
+}
+
+/* skills section */
+.skills{
+	font-family: 'Poppins', sans-serif;
+	background-color: white;
+}
+.skills .title{
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	color: #000;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 90px;
+	margin-top: -90px;
+	
+}
+.skills .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left:  50%;
+	width: 260px;
+	height: 3px;
+	background: black;
+	transform: translateX(-50%);
+
+}
+.skills .title::after{
+	content: "-What I will bring-";
+	position: absolute;
+	bottom: -30px;
+	left:  50%;
+	padding: 5px;
+	background: white;
+	transform: translateX(-50%);
+	font-size: 15px;
+	color: black;
+
+
+}
+.skills .skills-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.skills .skills-content .left{
+	width: 45%;
+}
+.skills .skills-content .card{
+	background: darkgrey;
+	text-align: center;
+	border-radius: 6px;
+	padding: 20px 25px;
+}
+.skills .skills-content i{
+	font-size: 50px;
+	color: black;
+}
+
+/*project section styling*/
+.project{
+	font-family: 'Poppins', sans-serif;
+	background-color: white;
+}
+.project .title{
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	color: #000;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 90px;
+	margin-top: -90px;
+	
+}
+
+.project .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left:  50%;
+	width: 260px;
+	height: 3px;
+	background: black;
+	transform: translateX(-50%);
+
+}
+.project .title::after{
+	content: "-My work (More to Come)-";
+	position: absolute;
+	bottom: -30px;
+	left:  50%;
+	padding: 5px;
+	background: white;
+	transform: translateX(-50%);
+	font-size: 15px;
+	color: black;
+}
+
+
+/*contact section styling */
+
+.contact{
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+	color: white;
+}
+.contact .title{
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 90px;
+	margin-top: -90px;
+	
+}
+.contact .title::before{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left:  50%;
+	width: 260px;
+	height: 3px;
+	background:  white;
+	transform: translateX(-50%);
+
+}
+.contact .title::after{
+	content: "-Keep in touch-";
+	position: absolute;
+	bottom: -30px;
+	left:  50%;
+	padding: 5px;
+	background: black;
+	transform: translateX(-50%);
+	font-size: 15px;
+	color: #fff;
+
+
+}
+.contact .contact-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.contact .contact-content .left{
+	width: 45%;
+}
+.contact .contact-content .column{
+	width: calc(50% - 30%);
+
+}
+.contact .contact-content .text{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+
+}
+.contact .contact-content .left .icons{
+	margin: 10px 0;
+
+}
+
+.contact .contact-content .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+}
+
+.contact .contact-content .row .info{
+	margin-left: 30px;
+}
+
+
+.contact .contact-content .left p{
+	text-align: justify;
+
+
+}
+.contact .contact-content .row i{
+	font-size: 25px;
+	color: white;
+}
+
+
+.contact .contact-content .info .head{
+	font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+	color: #fff;
+
+}
+
+/*footer section styling */
+
+footer{
+
+	background: #182e36;
+	padding: 20px 23px;
+}
+footer span a{
+	color: darkgrey;
+}
+footer span a:hover{
+	text-decoration: underline;
+}
+
